@@ -4,7 +4,8 @@ function Person(name, age) {
 }
 
 Person.prototype.greet = function () {
-  console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
+  // Modify the greeting message to match the expected format in the Cypress test
+  console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
 };
 
 function Employee(name, age, jobTitle) {
